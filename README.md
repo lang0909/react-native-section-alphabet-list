@@ -1,3 +1,5 @@
+# lang0909 Fork Version
+
 # react-native-section-alphabet-list
 
 A simple React Native component that takes an array of data and renders a SectionList with alphabetically (or custom) sorted data.
@@ -66,8 +68,8 @@ render() {
   return (
     <AlphabetList
       data={data}
-      indexLetterStyle={{ 
-        color: 'blue', 
+      indexLetterStyle={{
+        color: 'blue',
         fontSize: 15,
       }}
       renderCustomItem={(item) => (
@@ -89,21 +91,21 @@ render() {
 
 ### Props
 
-| Prop | Description | Type | Signature (func) | Default |
-| --- | --- | --- | --- | --- |
-| `data` | List of objects to be sorted and rendered in the `SectionList`. Each item must have both a `value` property and unique a `key` property. | `array` | | |
-| `index` (optional) | The characters used to sort each item into sections. These characters are rendered on the right-hand side and clicking on each item scrolls the user to its respective section. The default is the letters of the alphabet. | `array` | | `['a', 'b', 'c', 'd', 'e', 'f', ...]` (see `DEFAULT_CHAR_INDEX` [here](https://github.com/Kieran-McIntyre/react-native-section-alphabet-list/blob/master/src/values/consts.ts))|
-| `renderCustomItem` (optional) | Render a row in the SectionList. Should return a valid React Element. | `func` | `{ item: { value: string, key: string } } : ReactElement` | |
-| `renderCustomSectionHeader` (optional) | Render a section header in the SectionList. Should return a valid React Element. | `func` | `{ section: { title: string, index: number, data: array } } : ReactElement` | |
-| `renderCustomListHeader` (optional) | Render a list header in the SectionList. Should return a valid React Element. | `func` | | |
-| `renderCustomIndexLetter` (optional) | Render a custom index letter element. Should return a valid React Element. | `func` | `{ item: { title: string, index: number, data: array }, index: number, onPress: func } : ReactElement` | |
-| `getItemHeight` (optional) | For [`sectionListGetItemLayout`](https://www.npmjs.com/package/react-native-section-list-get-item-layout). This may be necessary if each item has a dynamic height. This allows for smooth scrolling and accurate positioning when scrolling to a section.  | `func` | `{ sectionIndex: number, rowIndex: number } : number`  | |
-| `sectionHeaderHeight` (optional) | The height of the section header. | `number` | | `40` |
-| `listHeaderHeight` (optional) | The height of the list header. | `number` | | `0` |
-| `indexContainerStyle` (optional) | Override the style of the list index container.  | `object` | | `undefined` |
-| `indexLetterStyle` (optional) | Override the style of the list letter index text.  | `object` | | `undefined` |
-| `indexLetterContainerStyle` (optional) | Override the style of the list letter index container.  | `object` | | `undefined` |
-| `uncategorizedAtTop` (optional) | If `true`, the uncategorised items (the `#` section) is moved to the top of the list.  | `boolean` | | false |
+| Prop                                   | Description                                                                                                                                                                                                                                                | Type      | Signature (func)                                                                                       | Default                                                                                                                                                                         |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `data`                                 | List of objects to be sorted and rendered in the `SectionList`. Each item must have both a `value` property and unique a `key` property.                                                                                                                   | `array`   |                                                                                                        |                                                                                                                                                                                 |
+| `index` (optional)                     | The characters used to sort each item into sections. These characters are rendered on the right-hand side and clicking on each item scrolls the user to its respective section. The default is the letters of the alphabet.                                | `array`   |                                                                                                        | `['a', 'b', 'c', 'd', 'e', 'f', ...]` (see `DEFAULT_CHAR_INDEX` [here](https://github.com/Kieran-McIntyre/react-native-section-alphabet-list/blob/master/src/values/consts.ts)) |
+| `renderCustomItem` (optional)          | Render a row in the SectionList. Should return a valid React Element.                                                                                                                                                                                      | `func`    | `{ item: { value: string, key: string } } : ReactElement`                                              |                                                                                                                                                                                 |
+| `renderCustomSectionHeader` (optional) | Render a section header in the SectionList. Should return a valid React Element.                                                                                                                                                                           | `func`    | `{ section: { title: string, index: number, data: array } } : ReactElement`                            |                                                                                                                                                                                 |
+| `renderCustomListHeader` (optional)    | Render a list header in the SectionList. Should return a valid React Element.                                                                                                                                                                              | `func`    |                                                                                                        |                                                                                                                                                                                 |
+| `renderCustomIndexLetter` (optional)   | Render a custom index letter element. Should return a valid React Element.                                                                                                                                                                                 | `func`    | `{ item: { title: string, index: number, data: array }, index: number, onPress: func } : ReactElement` |                                                                                                                                                                                 |
+| `getItemHeight` (optional)             | For [`sectionListGetItemLayout`](https://www.npmjs.com/package/react-native-section-list-get-item-layout). This may be necessary if each item has a dynamic height. This allows for smooth scrolling and accurate positioning when scrolling to a section. | `func`    | `{ sectionIndex: number, rowIndex: number } : number`                                                  |                                                                                                                                                                                 |
+| `sectionHeaderHeight` (optional)       | The height of the section header.                                                                                                                                                                                                                          | `number`  |                                                                                                        | `40`                                                                                                                                                                            |
+| `listHeaderHeight` (optional)          | The height of the list header.                                                                                                                                                                                                                             | `number`  |                                                                                                        | `0`                                                                                                                                                                             |
+| `indexContainerStyle` (optional)       | Override the style of the list index container.                                                                                                                                                                                                            | `object`  |                                                                                                        | `undefined`                                                                                                                                                                     |
+| `indexLetterStyle` (optional)          | Override the style of the list letter index text.                                                                                                                                                                                                          | `object`  |                                                                                                        | `undefined`                                                                                                                                                                     |
+| `indexLetterContainerStyle` (optional) | Override the style of the list letter index container.                                                                                                                                                                                                     | `object`  |                                                                                                        | `undefined`                                                                                                                                                                     |
+| `uncategorizedAtTop` (optional)        | If `true`, the uncategorised items (the `#` section) is moved to the top of the list.                                                                                                                                                                      | `boolean` |                                                                                                        | false                                                                                                                                                                           |
 
 You can also provide any valid `SectionList` props. A list of available props can be found [here](https://reactnative.dev/docs/sectionlist#props).
 
@@ -125,7 +127,6 @@ const customIndex = [
   index={customIndex}
 />
 ```
-
 
 ## Contributing
 

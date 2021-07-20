@@ -1,6 +1,6 @@
 {
-  "name": "react-native-section-alphabet-list",
-  "version": "2.0.7",
+  "name": "@lang0909/react-native-section-alphabet-list",
+  "version": "0.0.1",
   "description": "A simple React Native component that takes an array of data and renders a SectionList with alphabetically sorted data.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,8 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kieran-McIntyre/react-native-alphabet-list.git",
-    "baseUrl": "https://github.com/Kieran-McIntyre/react-native-alphabet-list"
+    "url": "git+https://github.com/lang0909/react-native-alphabet-list.git"
   },
   "keywords": [
     "react-native",
@@ -27,8 +26,8 @@
     "custom"
   ],
   "author": {
-    "name": "Kieran McIntyre",
-    "email": "k.mcintyre98@outlook.com"
+    "name": "Lee An Kyu",
+    "email": "lang0909@gmail.com"
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",
